@@ -1,0 +1,246 @@
+
+
+
+
+section{
+    display: flex;
+    width: 600px;
+    height: 330px;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .4s ease;
+}
+
+
+section img:hover{
+    cursor: crosshair;
+    width: 280px;
+    opacity: 1;
+    filter: contrast(120%);
+    
+}
+
+body{
+    background-color: white
+        
+        ;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:700');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+body {
+  background-color: #dfe6e9;
+  -webkit-transform: perspective(900px);
+  -webkit-transform-style: preserve-3d;
+}
+.title{
+  width=100%;
+  text-align: center;
+}
+.title h1{
+  font-size:50px;
+  font-family: 'Exo', sans-serif;
+}
+.card1 {
+  text-align:center;
+  position: absolute;
+  left: 100px;
+  width: 250px;
+  height: 560px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(rgb(240, 243, 244),rgb( 247, 220, 111 ));
+  transition:.6s;
+  
+  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+  box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
+}
+.card1:hover{
+  transform: rotatex(0deg);
+  transform: rotatez(0deg);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.card1 img{
+  transform: translateY(15px);
+  width:200px;
+  height:120px;
+}
+h3{
+  font-size:25px;
+  font-family: 'Abel', sans-serif;
+  color:rgb( 23, 32, 42);
+  text-shadow: 0 0 2px rgb( 23, 32, 42);
+  transform: translatey(10px);
+}
+
+p{
+  
+  font-family: 'Abel', sans-serif;
+  color: black;
+  text-align:center;
+  width:220px;
+  transform: translatex(12px);
+}
+
+
+.card2 {
+  text-align:center;
+  position: absolute;
+  left: 550px;
+  width: 250px;
+  height: 570px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(rgb(247, 220, 111),rgb(28, 40, 51));
+  animation: animate 1s linear infinite;
+  transition:.6s;
+  
+  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+.card2:hover{
+   transform: rotatex(0deg);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.card2 img{
+  transform: translateY(15px);
+  width:180px;
+  height:150px;
+}
+.card3 {
+  text-align:center;
+  position: absolute;
+  left: 1000px;
+  width: 250px;
+  height: 540px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(#FDFEFE , #F7DC6F );
+  transition:.6s;
+  
+  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+.card3:hover{
+   transform: rotatex(0deg);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.card3 img{
+  transform: translateY(15px);
+  width:200px;
+  height:120px;
+}
+.footer{
+  position: absolute;
+  top: 500px;
+  marging: 10px;
+  width: 100%;
+   text-align: center;
+}
+.footer h2{
+  font-size:18px;
+  font-family: 'Exo', sans-serif;
+  
+}
+
+
+
+
+.card3 .p{
+  
+  font-family: 'Abel', sans-serif;
+  color: black;
+  text-align:center;
+  width:220px;
+  transform: translatex(12px);
+}
+.card2 .p{
+  
+  
+  color: white;
+ 
+}
+
+
+
+
+.Btn {
+  width: 140px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.089);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.leftContainer {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(238, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.leftContainer .like {
+  color: white;
+  font-weight: 600;
+}
+
+.likeCount {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(238, 0, 0);
+  font-weight: 600;
+  position: relative;
+  background-color: white;
+}
+
+.likeCount::before {
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  content: "";
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+  left: -4px;
+}
+
+.Btn:hover .leftContainer {
+  background-color: rgb(219, 0, 0);
+}
+
+.Btn:active .leftContainer {
+  background-color: rgb(201, 0, 0);
+}
+
+.Btn:active .leftContainer svg {
+  transform: scale(1.15);
+  transform-origin: top;
+}
+
+
+
+
+
+
+
+
